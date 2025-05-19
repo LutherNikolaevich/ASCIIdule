@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIIdule - ASCII Timetable Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ASCIIdule</h1>
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" placeholder="e.g., Mathematics">
+                </div>
+                <div class="form-group">
+                    <label for="day">Day:</label>
+                    <select id="day">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="start-time">Start Time:</label>
+                    <input type="time" id="start-time">
+                </div>
+                <div class="form-group">
+                    <label for="end-time">End Time:</label>
+                    <input type="time" id="end-time">
+                </div>
+                <div class="form-group">
+                    <label for="room">Room:</label>
+                    <input type="text" id="room" placeholder="e.g., Room 101">
+                </div>
+                <button id="add-class">Add Class</button>
+            </div>
+
+            <div class="schedule-section">
+                <h2>Your Schedule</h2>
+                <div id="schedule-display" class="ascii-output"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
